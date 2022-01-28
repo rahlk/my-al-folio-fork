@@ -1,7 +1,7 @@
 ---
 layout: page
-title: resume
-permalink: /resume/
+title: projects
+permalink: /projects/
 description:
 nav: false
 horizontal: false

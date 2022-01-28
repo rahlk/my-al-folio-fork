@@ -3,7 +3,9 @@ layout: page
 permalink: /resume/
 title: resume
 description: 
-nav: false
+nav: true
 ---
 
-<iframe src="/assets/pdf/resume.pdf" width="100%" height="1200px">
+<a href="/assets/pdf/resume.pdf" target="_blank">
+<img src="/assets/img/resume.png" width="100%">
+</a>
