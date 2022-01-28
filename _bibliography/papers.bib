@@ -130,6 +130,10 @@
   pdf={/assets/pdf/iSENSE_icse19.pdf}
 }
 
+---------------------------------------
+----------> Selected Papers <----------
+---------------------------------------
+
 @inproceedings{iqbal2022unicorn,
       abbr={EuroSys},
       selected={true},
@@ -142,16 +146,17 @@
       pdf={https://arxiv.org/pdf/2201.08413.pdf},
 }
 
-@inproceedings{she2020mtfuzz,
+@inproceedings{kalia2021mono2micro,
   abbr={FSE},
   selected={true},
-  title={MTFuzz: Fuzzing with a Multi-Task Neural Network},
-  abstract={Fuzzing is a widely used technique for detecting software bugs and vulnerabilities. Most popular fuzzers generate new inputs using an evolutionary search to maximize code coverage. Essentially, these fuzzers start with a set of seed inputs, mutate them to generate new inputs, and identify the promising inputs using an evolutionary fitness function for further mutation. Despite their success, evolutionary fuzzers tend to get stuck in long sequences of unproductive mutations. In recent years, machine learning (ML) based mutation strategies have reported promising results. However, the existing ML-based fuzzers are limited by the lack of quality and diversity of the training data. As the input space of the target programs is high dimensional and sparse, it is prohibitively expensive to collect many diverse samples demonstrating successful and unsuccessful mutations to train the model. In this paper, we address these issues by using a Multi-Task Neural Network that can learn a compact embedding of the input space based on diverse training samples for multiple related tasks (i.e., predicting for different types of coverage). The compact embedding can guide the mutation process by focusing most of the mutations on the parts of the embedding where the gradient is high. MTFuzz uncovers 11 previously unseen bugs and achieves an average of 2× more edge coverage compared with 5 state-of-the-art fuzzer on 10 real-world programs.},
-  author={She, Dongdong and Krishna, Rahul and Yan, Lu and Jana, Suman and Ray, Baishakhi},
-  booktitle={2020 ACM 28th Symposium on the Foundations of Software Engineering (ECSE/FSE)},
-  year={2020},
-  html={https://arxiv.org/abs/2005.12392},
-  pdf={https://arxiv.org/pdf/2005.12392},
+  abstract={In migrating production workloads to cloud, enterprises often face the daunting task of evolving monolithic applications toward a microservice architecture. At IBM, we developed a tool called Mono2Micro to assist with this challenging task. Mono2Micro performs spatio-temporal decomposition, leveraging well-defined business use cases and runtime call relations to create functionally cohesive partitioning of application classes. Our preliminary evaluation of Mono2Micro showed promising results. How well does Mono2Micro perform against other decomposition techniques, and how do practitioners perceive the tool? This paper describes the technical foundations of Mono2Micro and presents results to answer these two questions. To answer the first question, we evaluated Mono2Micro against four existing techniques on a set of open-source and proprietary Java applications and using different metrics to assess the quality of decomposition and tool's efficiency. Our results show that Mono2Micro significantly outperforms state-of-the-art baselines in specific metrics well-defined for the problem domain. To answer the second question, we conducted a survey of twenty-one practitioners in various industry roles who have used Mono2Micro. This study highlights several benefits of the tool, interesting practitioner perceptions, and scope for further improvements. Overall, these results show that Mono2Micro can provide a valuable aid to practitioners in creating functionally cohesive and explainable microservice decompositions.},
+  title={Mono2Micro: A practical and effective tool for decomposing monolithic Java applications to microservices},
+  author={Kalia, Anup K and Xiao, Jin and Krishna, Rahul and Sinha, Saurabh and Vukovic, Maja and Banerjee, Debasish},
+  booktitle={Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE).},
+  pages={1214--1224},
+  year={2021},
+  html={https://arxiv.org/abs/2107.09698},
+  pdf={https://arxiv.org/pdf/2107.09698}
 }
 
 @article{chakraborty2021deep,
@@ -165,6 +170,17 @@
   publisher={IEEE},
   html={https://arxiv.org/abs/2009.07235},
   pdf={https://arxiv.org/pdf/2009.07235},
+}
+@inproceedings{she2020mtfuzz,
+  abbr={FSE},
+  selected={true},
+  title={MTFuzz: Fuzzing with a Multi-Task Neural Network},
+  abstract={Fuzzing is a widely used technique for detecting software bugs and vulnerabilities. Most popular fuzzers generate new inputs using an evolutionary search to maximize code coverage. Essentially, these fuzzers start with a set of seed inputs, mutate them to generate new inputs, and identify the promising inputs using an evolutionary fitness function for further mutation. Despite their success, evolutionary fuzzers tend to get stuck in long sequences of unproductive mutations. In recent years, machine learning (ML) based mutation strategies have reported promising results. However, the existing ML-based fuzzers are limited by the lack of quality and diversity of the training data. As the input space of the target programs is high dimensional and sparse, it is prohibitively expensive to collect many diverse samples demonstrating successful and unsuccessful mutations to train the model. In this paper, we address these issues by using a Multi-Task Neural Network that can learn a compact embedding of the input space based on diverse training samples for multiple related tasks (i.e., predicting for different types of coverage). The compact embedding can guide the mutation process by focusing most of the mutations on the parts of the embedding where the gradient is high. MTFuzz uncovers 11 previously unseen bugs and achieves an average of 2× more edge coverage compared with 5 state-of-the-art fuzzer on 10 real-world programs.},
+  author={She, Dongdong and Krishna, Rahul and Yan, Lu and Jana, Suman and Ray, Baishakhi},
+  booktitle={Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ECSE/FSE).},
+  year={2020},
+  html={https://arxiv.org/abs/2005.12392},
+  pdf={https://arxiv.org/pdf/2005.12392},
 }
 
 @article{krishna2020conex,
@@ -236,17 +252,4 @@
   year={2021},
   html={https://arxiv.org/abs/2106.06652},
   pdf={https://arxiv.org/pdf/2106.06652}
-}
-
-@inproceedings{kalia2021mono2micro,
-  abbr={FSE},
-  selected={true},
-  abstract={In migrating production workloads to cloud, enterprises often face the daunting task of evolving monolithic applications toward a microservice architecture. At IBM, we developed a tool called Mono2Micro to assist with this challenging task. Mono2Micro performs spatio-temporal decomposition, leveraging well-defined business use cases and runtime call relations to create functionally cohesive partitioning of application classes. Our preliminary evaluation of Mono2Micro showed promising results. How well does Mono2Micro perform against other decomposition techniques, and how do practitioners perceive the tool? This paper describes the technical foundations of Mono2Micro and presents results to answer these two questions. To answer the first question, we evaluated Mono2Micro against four existing techniques on a set of open-source and proprietary Java applications and using different metrics to assess the quality of decomposition and tool's efficiency. Our results show that Mono2Micro significantly outperforms state-of-the-art baselines in specific metrics well-defined for the problem domain. To answer the second question, we conducted a survey of twenty-one practitioners in various industry roles who have used Mono2Micro. This study highlights several benefits of the tool, interesting practitioner perceptions, and scope for further improvements. Overall, these results show that Mono2Micro can provide a valuable aid to practitioners in creating functionally cohesive and explainable microservice decompositions.},
-  title={Mono2Micro: A practical and effective tool for decomposing monolithic Java applications to microservices},
-  author={Kalia, Anup K and Xiao, Jin and Krishna, Rahul and Sinha, Saurabh and Vukovic, Maja and Banerjee, Debasish},
-  booktitle={Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering.},
-  pages={1214--1224},
-  year={2021},
-  html={https://arxiv.org/abs/2107.09698},
-  pdf={https://arxiv.org/pdf/2107.09698}
 }

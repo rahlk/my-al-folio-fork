@@ -1,8 +1,9 @@
 ---
 layout: page
-permalink: /talks/
-title: Talks
-description: Materials for courses you taught. Replace this text with your description.
+permalink: /resume/
+title: resume
+description: 
 nav: false
 ---
 
+<iframe src="/assets/pdf/resume.pdf" width="100%" height="1200px">
