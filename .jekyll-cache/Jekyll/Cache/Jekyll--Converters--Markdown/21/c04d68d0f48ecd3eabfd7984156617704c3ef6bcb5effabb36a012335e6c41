@@ -1,4 +1,4 @@
-I"›<!-- _pages/publications.md -->
+I"›<!-- _pages/publications.md -->
 <div class="publications">
   <h2 class="year">2022</h2>
   <ol class="bibliography"><li><!-- _layouts/bib.html -->
@@ -358,7 +358,7 @@ To aid reuse of this work, DEEPLY is available here: https://github.com/anonymou
           <!-- Links/Buttons -->
           <div class="links">
             <a href="https://2019.icse-conferences.org/details/icse-2019-Technical-Papers/32/iSENSE-Completion-Aware-Crowdtesting-Management" class="btn btn-sm z-depth-0" role="button">HTML</a>
-            <a href="/assets/pdf//assets/pdf/iSENSE_icse19.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/iSENSE_icse19.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
 
           
