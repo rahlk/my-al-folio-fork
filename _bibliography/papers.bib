@@ -146,10 +146,47 @@ software analytic tools: (1) Lack of relevant data to perform the analytics, and
   pdf={https://repository.lib.ncsu.edu/bitstream/handle/1840.20/36993/etd.pdf}
 }
 
+@inproceedings{kalia2021mono2micro,
+  abbr={FSE},
+  selected={false},
+  abstract={In migrating production workloads to cloud, enterprises often face the daunting task of evolving monolithic applications toward a microservice architecture. At IBM, we developed a tool called Mono2Micro to assist with this challenging task. Mono2Micro performs spatio-temporal decomposition, leveraging well-defined business use cases and runtime call relations to create functionally cohesive partitioning of application classes. Our preliminary evaluation of Mono2Micro showed promising results. How well does Mono2Micro perform against other decomposition techniques, and how do practitioners perceive the tool? This paper describes the technical foundations of Mono2Micro and presents results to answer these two questions. To answer the first question, we evaluated Mono2Micro against four existing techniques on a set of open-source and proprietary Java applications and using different metrics to assess the quality of decomposition and tool's efficiency. Our results show that Mono2Micro significantly outperforms state-of-the-art baselines in specific metrics well-defined for the problem domain. To answer the second question, we conducted a survey of twenty-one practitioners in various industry roles who have used Mono2Micro. This study highlights several benefits of the tool, interesting practitioner perceptions, and scope for further improvements. Overall, these results show that Mono2Micro can provide a valuable aid to practitioners in creating functionally cohesive and explainable microservice decompositions.},
+  title={Mono2Micro: A practical and effective tool for decomposing monolithic Java applications to microservices},
+  author={Kalia, Anup K and Xiao, Jin and Krishna, Rahul and Sinha, Saurabh and Vukovic, Maja and Banerjee, Debasish},
+  booktitle={Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE).},
+  pages={1214--1224},
+  year={2021},
+  html={https://arxiv.org/abs/2107.09698},
+  pdf={https://arxiv.org/pdf/2107.09698}
+}
+@inproceedings{majumder22stabilizer,
+  abbr={MSR},
+  selected={false},
+  abstract={Despite decades of research, Software Engineering (SE) lacks widely accepted models (that offer precise quantitative stable predictions) about what factors most influence software quality. This paper provides a promising result showing such stable models can be generated using a new transfer learning framework called “STABILIZER”. Given a tree of recursively clustered projects (using project meta-data), STABILIZER promotes a model upwards if it performs best in the lower clusters (stopping when the promoted model performs worse than the models seen at a lower level). The number of models found by STABILIZER is minimal: one for defect prediction (756 projects) and less than a dozen for project health (1628 projects). Hence, via STABILIZER, it is possible to find a few projects which can be used for transfer learning and make conclusions that hold across hundreds of projects at a time. Further, the models produced in this manner offer predictions that perform as well or better than the prior state-of-the-art. To the best of our knowledge, STABILIZER is order of magnitude faster than the prior state-of-the-art transfer learners which seek to find conclusion stability, and these case studies are the largest demonstration of the generalizability of quantitative predictions of project quality yet reported in the SE literature. In order to support open science, all our scripts and data are online at \url{https://github.com/Anonymous633671/STABILIZER}.},
+  title={Methods for Stabilizing Models Across Large Samples of Projects (with case studies on Predicting Defect and Project Health)},
+  author={Majumder, Suvodeep and Xia, Tianpei and Krishna, Rahul and Menzies, Tim},
+  booktitle={IEEE/ACM 19th International Conference on Mining Software Repositories (MSR `22)},
+  year={2022},
+  html={https://ieeexplore.ieee.org/abstract/document/9796244},
+  pdf={https://arxiv.org/pdf/1911.04250.pdf}
+}
+
 
 ---------------------------------------
 ----------> Selected Papers <----------
 ---------------------------------------
+
+@inproceedings{nitin2022cargo,
+  abbr={ASE},
+  selected={true},
+  abstract={Microservices Architecture (MSA) has become a de-facto standard for designing cloud-native enterprise applications due to its efficient infrastructure setup, service availability, elastic scalability, dependability, and better security. Existing (monolithic) systems must be decomposed into microservices to harness these characteristics. Since manual decomposition of large scale applications can be laborious and error-prone, AI-based systems to detect decomposition strategies are gaining popularity. However, the usefulness of these approaches is limited by the expressiveness of the program representation and their inability to model the application's dependency on critical external resources such as databases. Consequently, partitioning recommendations offered by current tools result in architectures that result in (a) distributed monoliths, and/or (b) force the use of (often criticized) distributed transactions. This work attempts to overcome these challenges by introducing CARGO({short for [C]ontext-sensitive l[A]bel p[R]opa[G]ati[O]n})-a novel un-/semi-supervised partition refinement technique that uses a context- and flow-sensitive system dependency graph of the monolithic application to refine and thereby enrich the partitioning quality of the current state-of-the-art algorithms. CARGO was used to augment four state-of-the-art microservice partitioning techniques that were applied on five Java EE applications (including one industrial scale proprietary project). Experiments demostrate that CARGO can improve the partition quality of all modern microservice partitioning techniques. Further, CARGO substantially reduces distributed transactions and a real-world performance evaluation of a benchmark application (deployed under varying loads) shows that CARGO also lowers the overall the latency of the deployed microservice application by 11% and increases throughput by 120% on average.},
+  title={CARGO: AI-Guided Dependency Analysis for Migrating Monolithic Applications to Microservices Architecture},
+  author={Nitin, Vikram and Asthana, Shubhi and Ray, Baishakhi and Krishna, Rahul},
+  booktitle={Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering (ASE ’22), October 10–14, 2022, Ann Arbor, MI, USA.},
+  pages={1--12},
+  year={2022},
+  html={https://arxiv.org/abs/2207.11784},
+  pdf={https://arxiv.org/pdf/2207.11784.pdf}
+}
 
 @inproceedings{iqbal2022unicorn,
       abbr={EuroSys},
@@ -163,18 +200,7 @@ software analytic tools: (1) Lack of relevant data to perform the analytics, and
       pdf={https://arxiv.org/pdf/2201.08413.pdf},
 }
 
-@inproceedings{kalia2021mono2micro,
-  abbr={FSE},
-  selected={true},
-  abstract={In migrating production workloads to cloud, enterprises often face the daunting task of evolving monolithic applications toward a microservice architecture. At IBM, we developed a tool called Mono2Micro to assist with this challenging task. Mono2Micro performs spatio-temporal decomposition, leveraging well-defined business use cases and runtime call relations to create functionally cohesive partitioning of application classes. Our preliminary evaluation of Mono2Micro showed promising results. How well does Mono2Micro perform against other decomposition techniques, and how do practitioners perceive the tool? This paper describes the technical foundations of Mono2Micro and presents results to answer these two questions. To answer the first question, we evaluated Mono2Micro against four existing techniques on a set of open-source and proprietary Java applications and using different metrics to assess the quality of decomposition and tool's efficiency. Our results show that Mono2Micro significantly outperforms state-of-the-art baselines in specific metrics well-defined for the problem domain. To answer the second question, we conducted a survey of twenty-one practitioners in various industry roles who have used Mono2Micro. This study highlights several benefits of the tool, interesting practitioner perceptions, and scope for further improvements. Overall, these results show that Mono2Micro can provide a valuable aid to practitioners in creating functionally cohesive and explainable microservice decompositions.},
-  title={Mono2Micro: A practical and effective tool for decomposing monolithic Java applications to microservices},
-  author={Kalia, Anup K and Xiao, Jin and Krishna, Rahul and Sinha, Saurabh and Vukovic, Maja and Banerjee, Debasish},
-  booktitle={Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE).},
-  pages={1214--1224},
-  year={2021},
-  html={https://arxiv.org/abs/2107.09698},
-  pdf={https://arxiv.org/pdf/2107.09698}
-}
+
 
 @article{chakraborty2021deep,
   abbr={TSE},

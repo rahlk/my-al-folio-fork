@@ -22,4 +22,4 @@ I obtained my PhD at NC State University, guided by [Dr. Tim Menzies](http://men
 
 + [Resume](/assets/pdf/resume.pdf). 
 
-+ [Publications](https://rahlk.github.io/publications/). 
++ [Publications](/publications). 
