@@ -5,14 +5,15 @@
 :root {
   --global-bg-color: #{$gb-lm-bg0-hard};
   --global-code-bg-color: #{$gb-lm-bg0-hard};
-  --global-text-color: #{$gb-lm-fg0};
-  --global-text-color-light: #{$gb-lm-fg0};
-  --global-theme-color: #{$gb-lm-light-purple};
-  --global-hover-color: #{$gb-lm-light-purple};
+  --global-text-color: #{$gb-dm-bg0-hard};
+  --global-text-color-light: #{$gb-dm-bg0-soft};
+  --global-theme-color: #{$gb-lm-dark-blue};
+  --global-badge-color: #{$gb-dm-light-purple};
+  --global-hover-color: #{$gb-lm-dark-purple};
   --global-footer-bg-color: #{$gb-lm-bg0-hard};
   --global-footer-text-color: #{$gb-lm-bg0-hard};
   --global-footer-link-color: #{$gb-lm-bg0-hard};
-  --global-distill-app-color: #{$gb-lm-fg0};
+  --global-distill-app-color: #{$gb-dm-bg0-soft};
   --global-divider-color: rgba(0,0,0,.1);
 
   .fa-sun {
@@ -28,14 +29,15 @@
 html[data-theme='dark'] {
   --global-bg-color: #{$gb-dm-bg0-soft};
   --global-code-bg-color: #{$gb-dm-bg0-hard};
-  --global-text-color: #{$gb-dm-fg0};
-  --global-text-color-light: #{$gb-dm-fg0};
-  --global-theme-color: #{$gb-dm-dark-purple};
-  --global-hover-color: #{$gb-dm-dark-purple};
+  --global-text-color: #{$gb-lm-bg0-hard};
+  --global-text-color-light: #{$gb-lm-bg0-hard};
+  --global-theme-color: #{$gb-dm-light-blue};
+  --global-badge-color: #{$gb-dm-dark-purple};
+  --global-hover-color: #{$gb-dm-light-purple};
   --global-footer-bg-color: #{$gb-dm-bg0-soft};
   --global-footer-text-color: #{$gb-dm-bg0-soft};
   --global-footer-link-color: #{$gb-dm-bg0-soft};
-  --global-distill-app-color: #{$gb-dm-fg0};
+  --global-distill-app-color: #{$gb-lm-bg0-hard};
   --global-divider-color: #424246;
 
   .fa-sun {
