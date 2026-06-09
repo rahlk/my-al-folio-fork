@@ -6,7 +6,7 @@ subtitle: <a href=https://research.ibm.com/teams/application-modernization>IBM R
 
 profile:
   align: right
-  image: small.jpg
+  image: pupnme.png
   address: >
     <p>Research Staff Member, IBM Research, NY.</p>
     <p>imralk AT gmail DOT com</p>
