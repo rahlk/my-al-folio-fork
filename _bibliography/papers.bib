@@ -1,43 +1,319 @@
 ---
 ---
-@article{ganesh2014entropy,
-  abbr={EAAI},
-  title={Entropy based Binary Particle Swarm Optimization and classification for ear detection},
-  author={Ganesh, Madan Ravi and Krishna, Rahul and Manikantan, K and Ramachandran, S},
-  journal={Engineering Applications of Artificial Intelligence},
-  volume={27},
-  pages={115--128},
-  year={2015},
-  publisher={Pergamon}
+
+@inproceedings{cui2026praxis,
+  abbr={DSN},
+  selected={true},
+  award={Best Paper Award},
+  title={Praxis: Agentic Structured Graph Traversal for Root Cause Analysis of Code-related Incidents in Cloud Applications},
+  author={Cui, Shengkun and Krishna, Rahul and Jha, Saurabh and Iyer, Ravishankar K.},
+  booktitle={Proceedings of the 56th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},
+  year={2026},
+  arxiv={2512.22113}
 }
 
-@inproceedings{krishna2015actionable,
-  abbr={ASE-Workshop},
-  title={Actionable=Cluster+Contrast?},
-  author={Krishna, Rahul and Menzies, Tim},
-  booktitle={Automated Software Engineering Workshop (ASEW), 2015 30th IEEE/ACM International Conference on},
-  pages={14--17},
-  year={2015},
-  organization={IEEE}
+@inproceedings{pan2025aster,
+  abbr={ICSE-SEIP},
+  selected={true},
+  award={Best Paper Award},
+  title={ASTER: Natural and Multi-Language Unit Test Generation with LLMs},
+  author={Pan, Rangeet and Kim, Myeongsoo and Krishna, Rahul and Pavuluri, Raju and Sinha, Saurabh},
+  booktitle={Proceedings of the 47th IEEE/ACM International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)},
+  pages={413--424},
+  year={2025},
+  html={https://doi.org/10.1109/ICSE-SEIP66354.2025.00042},
+  pdf={https://arxiv.org/pdf/2409.03093}
 }
 
-@inproceedings{krishna2016too,
+@article{chakraborty2021deep,
+  abbr={TSE},
+  selected={true},
+  award={Best Paper Award Runner Up},
+  abstract={Automated detection of software vulnerabilities is a fundamental problem in software security. Existing program analysis techniques either suffer from high false positives or false negatives. Recent progress in Deep Learning (DL) has resulted in a surge of interest in applying DL for automated vulnerability detection. Several recent studies have demonstrated promising results achieving an accuracy of up to 95% at detecting vulnerabilities. In this paper, we ask, "how well do the state-of-the-art DL-based techniques perform in a real-world vulnerability prediction scenario?". To our surprise, we find that their performance drops by more than 50%. A systematic investigation of what causes such precipitous performance drop reveals that existing DL-based vulnerability prediction approaches suffer from challenges with the training data (e.g., data duplication, unrealistic distribution of vulnerable classes, etc.) and with the model choices (e.g., simple token-based models). As a result, these approaches often do not learn features related to the actual cause of the vulnerabilities. Instead, they learn unrelated artifacts from the dataset (e.g., specific variable/function names, etc.). Leveraging these empirical findings, we demonstrate how a more principled approach to data collection and model design, based on realistic settings of vulnerability prediction, can lead to better solutions. The resulting tools perform significantly better than the studied baseline: up to 33.57% boost in precision and 128.38% boost in recall compared to the best performing model in the literature. Overall, this paper elucidates existing DL-based vulnerability prediction systems' potential issues and draws a roadmap for future DL-based vulnerability prediction research. In that spirit, we make available all the artifacts supporting our results: https://github.com/VulDetProject/ReVeal},
+  title={Deep learning based vulnerability detection: Are we there yet?},
+  author={Chakraborty, Saikat and Krishna, Rahul and Ding, Yangruibo and Ray, Baishakhi},
+  journal={IEEE Transactions on Software Engineering.},
+  year={2021},
+  publisher={IEEE},
+  html={https://arxiv.org/abs/2009.07235},
+  pdf={https://arxiv.org/pdf/2009.07235},
+}
+
+@inproceedings{pan2026saint,
+  abbr={ICSE},
+  selected={true},
+  title={SAINT: Service-level Integration Test Generation with Program Analysis and LLM-based Agents},
+  author={Pan, Rangeet and Pavuluri, Raju and Huang, Ruikai and Krishna, Rahul and Stennett, Tyler and Orso, Alessandro and Sinha, Saurabh},
+  booktitle={Proceedings of the 48th IEEE/ACM International Conference on Software Engineering (ICSE)},
+  year={2026},
+  arxiv={2511.13305}
+}
+
+@inproceedings{pan2024lost,
+  abbr={ICSE},
+  selected={true},
+  title={Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code},
+  author={Pan, Rangeet and Ibrahimzada, Ali Reza and Krishna, Rahul and Sankar, Divya and Wassi, Lambert Pouguem and Merler, Michele and Sobolev, Boris and Pavuluri, Raju and Sinha, Saurabh and Jabbarvand, Reyhaneh},
+  booktitle={Proceedings of the 46th IEEE/ACM International Conference on Software Engineering (ICSE)},
+  pages={82:1--82:13},
+  year={2024},
+  html={https://doi.org/10.1145/3597503.3639226},
+  pdf={https://arxiv.org/pdf/2308.03109}
+}
+
+@inproceedings{nitin2022cargo,
   abbr={ASE},
-  title={Too much automation? The bellwether effect and its implications for transfer learning},
-  author={Krishna, Rahul and Menzies, Tim and Fu, Wei},
-  booktitle={Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering},
-  pages={122--131},
-  year={2016}
+  selected={true},
+  award={Best Paper Award},
+  abstract={Microservices Architecture (MSA) has become a de-facto standard for designing cloud-native enterprise applications due to its efficient infrastructure setup, service availability, elastic scalability, dependability, and better security. Existing (monolithic) systems must be decomposed into microservices to harness these characteristics. Since manual decomposition of large scale applications can be laborious and error-prone, AI-based systems to detect decomposition strategies are gaining popularity. However, the usefulness of these approaches is limited by the expressiveness of the program representation and their inability to model the application's dependency on critical external resources such as databases. Consequently, partitioning recommendations offered by current tools result in architectures that result in (a) distributed monoliths, and/or (b) force the use of (often criticized) distributed transactions. This work attempts to overcome these challenges by introducing CARGO({short for [C]ontext-sensitive l[A]bel p[R]opa[G]ati[O]n})-a novel un-/semi-supervised partition refinement technique that uses a context- and flow-sensitive system dependency graph of the monolithic application to refine and thereby enrich the partitioning quality of the current state-of-the-art algorithms. CARGO was used to augment four state-of-the-art microservice partitioning techniques that were applied on five Java EE applications (including one industrial scale proprietary project). Experiments demostrate that CARGO can improve the partition quality of all modern microservice partitioning techniques. Further, CARGO substantially reduces distributed transactions and a real-world performance evaluation of a benchmark application (deployed under varying loads) shows that CARGO also lowers the overall the latency of the deployed microservice application by 11% and increases throughput by 120% on average.},
+  title={CARGO: AI-Guided Dependency Analysis for Migrating Monolithic Applications to Microservices Architecture},
+  author={Nitin, Vikram and Asthana, Shubhi and Ray, Baishakhi and Krishna, Rahul},
+  booktitle={Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering (ASE '22), October 10–14, 2022, Ann Arbor, MI, USA.},
+  pages={1--12},
+  year={2022},
+  html={https://arxiv.org/abs/2207.11784},
+  pdf={https://arxiv.org/pdf/2207.11784.pdf}
 }
 
-@inproceedings{krishna2016bigse,
-  abbr={ICSE-BigDSE},
-  title={The 'BigSE' Project: Lessons Learned from Validating Industrial Text Mining},
-  author={Krishna, Rahul and Yu, Zhe and Agrawal, Amritanshu and Dominguez, Manuel and Wolf, David},
-  booktitle={Big Data Software Engineering (BIGDSE), 2016 IEEE/ACM 2nd International Workshop on},
-  pages={65--71},
-  year={2016},
-  organization={IEEE}
+@inproceedings{iqbal2022unicorn,
+  abbr={EuroSys},
+  selected={false},
+  title={Unicorn: Reasoning about Configurable System Performance through the lens of Causality},
+  abstract={Modern computer systems are highly configurable, with the variability space sometimes larger than the number of atoms in the universe. Understanding and reasoning about the performance behavior of highly configurable systems, due to a vast variability space, is challenging. State-of-the-art methods for performance modeling and analyses rely on predictive machine learning models, therefore, they become (i) unreliable in unseen environments (e.g., different hardware, workloads), and (ii) produce incorrect explanations. To this end, we propose a new method, called Unicorn, which (a) captures intricate interactions between configuration options across the software-hardware stack and (b) describes how such interactions impact performance variations via causal inference. We evaluated Unicorn on six highly configurable systems, including three on-device machine learning systems, a video encoder, a database management system, and a data analytics pipeline. The experimental results indicate that Unicorn outperforms state-of-the-art performance optimization and debugging methods. Furthermore, unlike the existing methods, the learned causal performance models reliably predict performance for new environments.},
+  author={Iqbal, Md Shahriar and Krishna, Rahul and Javidian, Mohammad Ali and Ray, Baishakhi and Jamshidi, Pooyan},
+  booktitle={The European Conference on Computer Systems (EuroSys).},
+  year={2022},
+  html={https://arxiv.org/abs/2201.08413},
+  pdf={https://arxiv.org/pdf/2201.08413.pdf},
+}
+
+@inproceedings{she2020mtfuzz,
+  abbr={FSE},
+  selected={false},
+  title={MTFuzz: Fuzzing with a Multi-Task Neural Network},
+  abstract={Fuzzing is a widely used technique for detecting software bugs and vulnerabilities. Most popular fuzzers generate new inputs using an evolutionary search to maximize code coverage. Essentially, these fuzzers start with a set of seed inputs, mutate them to generate new inputs, and identify the promising inputs using an evolutionary fitness function for further mutation. Despite their success, evolutionary fuzzers tend to get stuck in long sequences of unproductive mutations. In recent years, machine learning (ML) based mutation strategies have reported promising results. However, the existing ML-based fuzzers are limited by the lack of quality and diversity of the training data. As the input space of the target programs is high dimensional and sparse, it is prohibitively expensive to collect many diverse samples demonstrating successful and unsuccessful mutations to train the model. In this paper, we address these issues by using a Multi-Task Neural Network that can learn a compact embedding of the input space based on diverse training samples for multiple related tasks (i.e., predicting for different types of coverage). The compact embedding can guide the mutation process by focusing most of the mutations on the parts of the embedding where the gradient is high. MTFuzz uncovers 11 previously unseen bugs and achieves an average of 2× more edge coverage compared with 5 state-of-the-art fuzzer on 10 real-world programs.},
+  author={She, Dongdong and Krishna, Rahul and Yan, Lu and Jana, Suman and Ray, Baishakhi},
+  booktitle={Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ECSE/FSE).},
+  year={2020},
+  html={https://arxiv.org/abs/2005.12392},
+  pdf={https://arxiv.org/pdf/2005.12392},
+}
+
+@article{krishna2020conex,
+  abbr={TSE},
+  selected={false},
+  abstract={Configuration space complexity makes the big-data software systems hard to configure well. Consider Hadoop, with over nine hundred parameters, developers often just use the default configurations provided with Hadoop distributions. The opportunity costs in lost performance are significant. Popular learning-based approaches to auto-tune software does not scale well for big-data systems because of the high cost of collecting training data. We present a new method based on a combination of Evolutionary Markov Chain Monte Carlo (EMCMC) sampling and cost reduction techniques to cost-effectively find better-performing configurations for big data systems. For cost reduction, we developed and experimentally tested and validated two approaches: using scaled-up big data jobs as proxies for the objective function for larger jobs and using a dynamic job similarity measure to infer that results obtained for one kind of big data problem will work well for similar problems. Our experimental results suggest that our approach promises to significantly improve the performance of big data systems and that it outperforms competing approaches based on random sampling, basic genetic algorithms (GA), and predictive model learning. Our experimental results support the conclusion that our approach has strongly demonstrated potential to significantly and cost-effectively improve the performance of big data systems.},
+  title={ConEx: Efficient exploration of big-data system configurations for better performance},
+  author={Krishna, Rahul and Tang, Chong and Sullivan, Kevin and Ray, Baishakhi},
+  journal={IEEE Transactions on Software Engineering},
+  year={2020},
+  publisher={IEEE},
+  html={https://arxiv.org/abs/1910.09644},
+  pdf={https://arxiv.org/pdf/1910.09644},
+}
+
+@article{krishna2020whence,
+  abbr={TSE},
+  selected={false},
+  abstract={As software systems grow in complexity and the space of possible configurations increases exponentially, finding the near-optimal configuration of a software system becomes challenging. Recent approaches address this challenge by learning performance models based on a sample set of configurations. However, collecting enough sample configurations can be very expensive since each such sample requires configuring, compiling, and executing the entire system using a complex test suite. When learning on new data is too expensive, it is possible to use \textit{Transfer Learning} to "transfer" old lessons to the new context. Traditional transfer learning has a number of challenges, specifically, (a) learning from excessive data takes excessive time, and (b) the performance of the models built via transfer can deteriorate as a result of learning from a poor source. To resolve these problems, we propose a novel transfer learning framework called BEETLE, which is a "bellwether"-based transfer learner that focuses on identifying and learning from the most relevant source from amongst the old data. This paper evaluates BEETLE with 57 different software configuration problems based on five software systems (a video encoder, an SAT solver, a SQL database, a high-performance C-compiler, and a streaming data analytics tool). In each of these cases, BEETLE found configurations that are as good as or better than those found by other state-of-the-art transfer learners while requiring only a fraction (1/7th) of the measurements needed by those other methods. Based on these results, we say that BEETLE is a new high-water mark in optimally configuring software.},
+  title={Whence to learn? transferring knowledge in configurable systems using beetle},
+  author={Krishna, Rahul and Nair, Vivek and Jamshidi, Pooyan and Menzies, Tim},
+  journal={IEEE Transactions on Software Engineering},
+  year={2020},
+  publisher={IEEE},
+  html={https://arxiv.org/abs/1911.01817},
+  pdf={https://arxiv.org/pdf/1911.01817},
+}
+
+@misc{pavuluri2026scarfbench,
+  abbr={arXiv},
+  selected={false},
+  title={ScarfBench: A Benchmark for Cross-Framework Application Migration in Enterprise Java},
+  author={Pavuluri, Advait and McGinn, Bridget and Saxena, Ashita and Safta, George and Tamilselvam, Srikanth and Pavuluri, Raju and Merler, Michele and Ray, Baishakhi and Krishna, Rahul},
+  year={2026},
+  arxiv={2605.06754}
+}
+
+@article{nitin2026c2saferrust,
+  abbr={TSE},
+  selected={false},
+  title={C2SaferRust: Transforming C Projects into Safer Rust with NeuroSymbolic Techniques},
+  author={Nitin, Vikram and Krishna, Rahul and Lemos do Valle, Luiz and Ray, Baishakhi},
+  journal={IEEE Transactions on Software Engineering},
+  volume={52},
+  number={2},
+  pages={618--630},
+  year={2026},
+  publisher={IEEE},
+  html={https://doi.org/10.1109/TSE.2025.3641486},
+  pdf={https://arxiv.org/pdf/2501.14257}
+}
+
+@inproceedings{liu2026process,
+  abbr={OOPSLA},
+  selected={false},
+  title={Process-Centric Analysis of Agentic Software Systems},
+  author={Liu, Shuyang and Chen, Yang and Krishna, Rahul and Sinha, Saurabh and Ganhotra, Jatin and Jabbarvand, Reyhaneh},
+  booktitle={Proceedings of the ACM on Programming Languages (OOPSLA)},
+  year={2026},
+  arxiv={2512.02393}
+}
+
+@misc{zhu2026multitask,
+  abbr={arXiv},
+  selected={false},
+  title={Multi-task Code LLMs: Data Mix or Model Merge?},
+  author={Zhu, Mingzhi and Sobolev, Boris and Krishna, Rahul and Pavuluri, Raju and Patterson, Stacy and Merler, Michele},
+  year={2026},
+  arxiv={2601.21115}
+}
+
+@misc{vukovic2026aiassistants,
+  abbr={arXiv},
+  selected={false},
+  title={Usage, Effects and Requirements for AI Coding Assistants in the Enterprise: An Empirical Study},
+  author={Vukovic, Maja and Pan, Rangeet and Ho, Tin Kam and Krishna, Rahul and Pavuluri, Raju and Merler, Michele},
+  year={2026},
+  arxiv={2601.20112}
+}
+
+@inproceedings{krishna2025codellm,
+  abbr={FSE},
+  selected={false},
+  title={CodeLLM-Devkit: A Framework for Contextualizing Code LLMs with Program Analysis Insights},
+  author={Krishna, Rahul and Pan, Rangeet and Sinha, Saurabh and Tamilselvam, Srikanth and Pavuluri, Raju and Vukovic, Maja},
+  booktitle={Companion Proceedings of the 33rd ACM International Conference on the Foundations of Software Engineering (FSE Companion)},
+  pages={308--318},
+  year={2025},
+  html={https://doi.org/10.1145/3696630.3728555},
+  pdf={https://arxiv.org/pdf/2410.13007}
+}
+
+@misc{nitin2024spectra,
+  abbr={arXiv},
+  selected={false},
+  title={SpecTra: Enhancing the Code Translation Ability of Language Models by Generating Multi-Modal Specifications},
+  author={Nitin, Vikram and Krishna, Rahul and Ray, Baishakhi},
+  year={2024},
+  arxiv={2405.18574}
+}
+
+@article{yedida2023expert,
+  abbr={ESWA},
+  selected={false},
+  title={An expert system for redesigning software for cloud applications},
+  author={Yedida, Rahul and Krishna, Rahul and Kalia, Anup K. and Menzies, Tim and Xiao, Jin and Vukovic, Maja},
+  journal={Expert Systems with Applications},
+  volume={219},
+  pages={119673},
+  year={2023},
+  publisher={Elsevier},
+  html={https://doi.org/10.1016/j.eswa.2023.119673}
+}
+
+@inproceedings{majumder22stabilizer,
+  abbr={MSR},
+  selected={false},
+  abstract={Despite decades of research, Software Engineering (SE) lacks widely accepted models (that offer precise quantitative stable predictions) about what factors most influence software quality. This paper provides a promising result showing such stable models can be generated using a new transfer learning framework called "STABILIZER". Given a tree of recursively clustered projects (using project meta-data), STABILIZER promotes a model upwards if it performs best in the lower clusters (stopping when the promoted model performs worse than the models seen at a lower level). The number of models found by STABILIZER is minimal: one for defect prediction (756 projects) and less than a dozen for project health (1628 projects). Hence, via STABILIZER, it is possible to find a few projects which can be used for transfer learning and make conclusions that hold across hundreds of projects at a time. Further, the models produced in this manner offer predictions that perform as well or better than the prior state-of-the-art. To the best of our knowledge, STABILIZER is order of magnitude faster than the prior state-of-the-art transfer learners which seek to find conclusion stability, and these case studies are the largest demonstration of the generalizability of quantitative predictions of project quality yet reported in the SE literature. In order to support open science, all our scripts and data are online at \url{https://github.com/Anonymous633671/STABILIZER}.},
+  title={Methods for Stabilizing Models Across Large Samples of Projects (with case studies on Predicting Defect and Project Health)},
+  author={Majumder, Suvodeep and Xia, Tianpei and Krishna, Rahul and Menzies, Tim},
+  booktitle={IEEE/ACM 19th International Conference on Mining Software Repositories (MSR `22)},
+  year={2022},
+  html={https://ieeexplore.ieee.org/abstract/document/9796244},
+  pdf={https://arxiv.org/pdf/1911.04250.pdf}
+}
+
+@inproceedings{kalia2021mono2micro,
+  abbr={FSE},
+  selected={false},
+  abstract={In migrating production workloads to cloud, enterprises often face the daunting task of evolving monolithic applications toward a microservice architecture. At IBM, we developed a tool called Mono2Micro to assist with this challenging task. Mono2Micro performs spatio-temporal decomposition, leveraging well-defined business use cases and runtime call relations to create functionally cohesive partitioning of application classes. Our preliminary evaluation of Mono2Micro showed promising results. How well does Mono2Micro perform against other decomposition techniques, and how do practitioners perceive the tool? This paper describes the technical foundations of Mono2Micro and presents results to answer these two questions. To answer the first question, we evaluated Mono2Micro against four existing techniques on a set of open-source and proprietary Java applications and using different metrics to assess the quality of decomposition and tool's efficiency. Our results show that Mono2Micro significantly outperforms state-of-the-art baselines in specific metrics well-defined for the problem domain. To answer the second question, we conducted a survey of twenty-one practitioners in various industry roles who have used Mono2Micro. This study highlights several benefits of the tool, interesting practitioner perceptions, and scope for further improvements. Overall, these results show that Mono2Micro can provide a valuable aid to practitioners in creating functionally cohesive and explainable microservice decompositions.},
+  title={Mono2Micro: A practical and effective tool for decomposing monolithic Java applications to microservices},
+  author={Kalia, Anup K and Xiao, Jin and Krishna, Rahul and Sinha, Saurabh and Vukovic, Maja and Banerjee, Debasish},
+  booktitle={Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE).},
+  pages={1214--1224},
+  year={2021},
+  html={https://arxiv.org/abs/2107.09698},
+  pdf={https://arxiv.org/pdf/2107.09698}
+}
+
+@article{yedida2021partitioning,
+  abbr={arXiv},
+  title={Partitioning Cloud-based Microservices (via Deep Learning)},
+  author={Yedida, Rahul and Krishna, Rahul and Kalia, Anup and Menzies, Tim and Xiao, Jin and Vukovic, Maja},
+  abstract={Cloud-based software has many advantages. When services are divided into many independent components, they are easier to update. Also, during peak demand, it is easier to scale cloud services (just hire more CPUs). Hence, many organizations are partitioning their monolithic enterprise applications into cloud-based microservices.
+Recently there has been much work using machine learning to simplify this partitioning task. Despite much research, no single partitioning method can be recommended as generally useful. More specifically, those prior solutions are "brittle''; i.e. if they work well for one kind of goal in one dataset, then they can be sub-optimal if applied to many datasets and multiple goals.
+In order to find a generally useful partitioning method, we propose DEEPLY. This new algorithm extends the CO-GCN deep learning partition generator with (a) a novel loss function and (b) some hyper-parameter optimization. As shown by our experiments, DEEPLY generally outperforms prior work (including CO-GCN, and others) across multiple datasets and goals. To the best of our knowledge, this is the first report in SE of such stable hyper-parameter optimization.
+To aid reuse of this work, DEEPLY is available here: https://github.com/anonymousplatypus/icse-deeply},
+  journal={arXiv preprint.},
+  year={2021},
+  html={https://arxiv.org/abs/2109.14569},
+  pdf={https://arxiv.org/pdf/2109.14569.pdf}
+}
+
+@inproceedings{yedida2021lessons,
+  abbr={ASE},
+  abstract={ When optimizing software for the cloud, monolithic applications need to be partitioned into many smaller *microservices*. While many tools have been proposed for this task, we warn that the evaluation of those approaches has been incomplete; e.g. minimal prior exploration of hyperparameter optimization. Using a set of open source Java EE applications, we show here that (a) such optimization can significantly improve microservice partitioning; and that (b) an open issue for future work is how to find which optimizer works best for different problems.},
+  title={Lessons learned from hyper-parameter tuning for microservice candidate identification},
+  author={Yedida, Rahul and Krishna, Rahul and Kalia, Anup and Menzies, Tim and Xiao, Jin and Vukovic, Maja},
+  booktitle={The 36th IEEE/ACM International Conference on Automated Software Engineering, Industry Showcase.},
+  year={2021},
+  html={https://arxiv.org/abs/2106.06652},
+  pdf={https://arxiv.org/pdf/2106.06652}
+}
+
+@article{krishna2020cadet,
+  abbr={NeurIPS-W},
+  abstract={Modern computing platforms are highly-configurable with thousands of interacting configurations. However, configuring these systems is challenging. Erroneous configurations can cause unexpected non-functional faults. This paper proposes CADET (short for Causal Debugging Toolkit) that enables users to identify, explain, and fix the root cause of non-functional faults early and in a principled fashion. CADET builds a causal model by observing the performance of the system under different configurations. Then, it uses casual path extraction followed by counterfactual reasoning over the causal model to: (a) identify the root causes of non-functional faults, (b) estimate the effects of various configurable parameters on the performance objective(s), and (c) prescribe candidate repairs to the relevant configuration options to fix the non-functional fault. We evaluated CADET on 5 highly-configurable systems deployed on 3 NVIDIA Jetson systems-on-chip. We compare CADET with state-of-the-art configuration optimization and ML-based debugging approaches. The experimental results indicate that CADET can find effective repairs for faults in multiple non-functional properties with (at most) 17% more accuracy, 28% higher gain, and 40× speed-up than other ML-based performance debugging methods. Compared to multi-objective optimization approaches, CADET can find fixes (at most) 9× faster with comparable or better performance gain. Our case study of non-functional faults reported in NVIDIA's forum show that CADET can find 14 better repairs than the experts' advice in less than 30 minutes.},
+  title={CADET: A systematic method for debugging misconfigurations using counterfactual reasoning},
+  author={Krishna, Rahul and Shahriar Iqbal, Md and Javidian, Mohammad Ali and Ray, Baishakhi and Jamshidi, Pooyan},
+  journal={NeurIPS 2020 (Workshop on ML for Systems).},
+  year={2020},
+  html={https://arxiv.org/abs/2010.06061},
+  pdf={https://arxiv.org/pdf/2010.06061.pdf},
+}
+
+@article{krishna2020learning,
+  abbr={EMSE},
+  title={Learning actionable analytics from multiple software projects},
+  author={Krishna, Rahul and Menzies, Tim},
+  journal={Empirical Software Engineering},
+  volume={25},
+  number={5},
+  pages={3468--3500},
+  year={2020},
+  publisher={Springer},
+  html={https://arxiv.org/abs/1708.05442},
+  pdf={https://arxiv.org/pdf/1708.05442.pdf}
+}
+
+@article{krishna2019learning,
+  abbr={PhD Thesis},
+  title={Learning Actionable Analytics in Software Engineering.},
+  abstract={Software analytics is routinely used by researchers and industrial practitioners for many
+diverse tasks. Large organizations such as Microsoft routinely make practice data-driven
+policy development where organizational policies are learned from an extensive analysis
+of large datasets. However, despite these successes, there exist some limitations to modern
+software analytic tools: (1) Lack of relevant data to perform the analytics, and
+(2) Lack of insightful analytics. This thesis attempts to highlight and offer potential solutions to these pressing problems.},
+  author={Krishna Prasad, Rahul and others},
+  journal={PhD dissertation, Dept. Computer Science, NC State Univ.},
+  year={2019},
+  html={https://repository.lib.ncsu.edu/handle/1840.20/36993},
+  pdf={https://repository.lib.ncsu.edu/bitstream/handle/1840.20/36993/etd.pdf}
+}
+
+@inproceedings{wang2019isense,
+  abbr={ICSE},
+  selected={true},
+  award={Distinguished Paper Award},
+  title={iSENSE: Completion-aware crowdtesting management},
+  author={Wang, Junjie and Yang, Ye and Krishna, Rahul and Menzies, Tim and Wang, Qing},
+  booktitle={2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE)},
+  pages={912--923},
+  year={2019},
+  organization={IEEE},
+  html={https://2019.icse-conferences.org/details/icse-2019-Technical-Papers/32/iSENSE-Completion-Aware-Crowdtesting-Management},
+  pdf={iSENSE_icse19.pdf}
 }
 
 @article{krishna2018bellwethers,
@@ -46,17 +322,6 @@
   author={Krishna, Rahul and Menzies, Tim},
   journal={IEEE Transactions on Software Engineering},
   year={2018}
-}
-
-@article{krishna2017less,
-  abbr={IST},
-  title={Less is more: Minimizing code reorganization using XTREE},
-  author={Krishna, Rahul and Menzies, Tim and Layman, Lucas},
-  journal={Information and Software Technology},
-  volume={88},
-  pages={53--66},
-  year={2017},
-  publisher={Elsevier}
 }
 
 @article{chen2018sampling,
@@ -69,19 +334,11 @@
 }
 
 @inproceedings{chen2018applications,
-  abbr={FSE}, 
+  abbr={FSE},
   title={Applications of psychological science for actionable analytics},
   author={Chen, Di and Fu, Wei and Krishna, Rahul and Menzies, Tim},
   booktitle={2018 ACM 26th Symposium on the Foundations of Software Engineering (ECSE/FSE)},
   pages={456--467},
-  year={2018}
-}
-
-@article{xia2018hyperparameter,
-  abbr={arXiv},
-  title={Hyperparameter optimization for effort estimation},
-  author={Xia, Tianpei and Krishna, Rahul and Chen, Jianfeng and Mathew, George and Shen, Xipeng and Menzies, Tim},
-  journal={arXiv preprint arXiv:1805.00336},
   year={2018}
 }
 
@@ -118,186 +375,61 @@
   pdf={https://arxiv.org/pdf/1711.03933.pdf}
 }
 
-@inproceedings{wang2019isense,
-  abbr={ICSE 🏆},
-  title={iSENSE: Completion-aware crowdtesting management },
-  author={Wang, Junjie and Yang, Ye and Krishna, Rahul and Menzies, Tim and Wang, Qing},
-  booktitle={2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE)},
-  pages={912--923},
-  year={2019},
-  organization={IEEE},
-  html={https://2019.icse-conferences.org/details/icse-2019-Technical-Papers/32/iSENSE-Completion-Aware-Crowdtesting-Management},
-  pdf={iSENSE_icse19.pdf}
-}
-
-@article{krishna2019learning,
-  abbr={PhD Thesis},
-  title={Learning Actionable Analytics in Software Engineering.},
-  abstract={Software analytics is routinely used by researchers and industrial practitioners for many
-diverse tasks. Large organizations such as Microsoft routinely make practice data-driven
-policy development where organizational policies are learned from an extensive analysis
-of large datasets. However, despite these successes, there exist some limitations to modern
-software analytic tools: (1) Lack of relevant data to perform the analytics, and
-(2) Lack of insightful analytics. This thesis attempts to highlight and offer potential solutions to these pressing problems.},
-  author={Krishna Prasad, Rahul and others},
-  journal={PhD dissertation, Dept. Computer Science, NC State Univ.},
-  year={2019},
-  html={https://repository.lib.ncsu.edu/handle/1840.20/36993},
-  pdf={https://repository.lib.ncsu.edu/bitstream/handle/1840.20/36993/etd.pdf}
-}
-
-@inproceedings{kalia2021mono2micro,
-  abbr={FSE},
-  selected={false},
-  abstract={In migrating production workloads to cloud, enterprises often face the daunting task of evolving monolithic applications toward a microservice architecture. At IBM, we developed a tool called Mono2Micro to assist with this challenging task. Mono2Micro performs spatio-temporal decomposition, leveraging well-defined business use cases and runtime call relations to create functionally cohesive partitioning of application classes. Our preliminary evaluation of Mono2Micro showed promising results. How well does Mono2Micro perform against other decomposition techniques, and how do practitioners perceive the tool? This paper describes the technical foundations of Mono2Micro and presents results to answer these two questions. To answer the first question, we evaluated Mono2Micro against four existing techniques on a set of open-source and proprietary Java applications and using different metrics to assess the quality of decomposition and tool's efficiency. Our results show that Mono2Micro significantly outperforms state-of-the-art baselines in specific metrics well-defined for the problem domain. To answer the second question, we conducted a survey of twenty-one practitioners in various industry roles who have used Mono2Micro. This study highlights several benefits of the tool, interesting practitioner perceptions, and scope for further improvements. Overall, these results show that Mono2Micro can provide a valuable aid to practitioners in creating functionally cohesive and explainable microservice decompositions.},
-  title={Mono2Micro: A practical and effective tool for decomposing monolithic Java applications to microservices},
-  author={Kalia, Anup K and Xiao, Jin and Krishna, Rahul and Sinha, Saurabh and Vukovic, Maja and Banerjee, Debasish},
-  booktitle={Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE).},
-  pages={1214--1224},
-  year={2021},
-  html={https://arxiv.org/abs/2107.09698},
-  pdf={https://arxiv.org/pdf/2107.09698}
-}
-@inproceedings{majumder22stabilizer,
-  abbr={MSR},
-  selected={false},
-  abstract={Despite decades of research, Software Engineering (SE) lacks widely accepted models (that offer precise quantitative stable predictions) about what factors most influence software quality. This paper provides a promising result showing such stable models can be generated using a new transfer learning framework called “STABILIZER”. Given a tree of recursively clustered projects (using project meta-data), STABILIZER promotes a model upwards if it performs best in the lower clusters (stopping when the promoted model performs worse than the models seen at a lower level). The number of models found by STABILIZER is minimal: one for defect prediction (756 projects) and less than a dozen for project health (1628 projects). Hence, via STABILIZER, it is possible to find a few projects which can be used for transfer learning and make conclusions that hold across hundreds of projects at a time. Further, the models produced in this manner offer predictions that perform as well or better than the prior state-of-the-art. To the best of our knowledge, STABILIZER is order of magnitude faster than the prior state-of-the-art transfer learners which seek to find conclusion stability, and these case studies are the largest demonstration of the generalizability of quantitative predictions of project quality yet reported in the SE literature. In order to support open science, all our scripts and data are online at \url{https://github.com/Anonymous633671/STABILIZER}.},
-  title={Methods for Stabilizing Models Across Large Samples of Projects (with case studies on Predicting Defect and Project Health)},
-  author={Majumder, Suvodeep and Xia, Tianpei and Krishna, Rahul and Menzies, Tim},
-  booktitle={IEEE/ACM 19th International Conference on Mining Software Repositories (MSR `22)},
-  year={2022},
-  html={https://ieeexplore.ieee.org/abstract/document/9796244},
-  pdf={https://arxiv.org/pdf/1911.04250.pdf}
-}
-
-
----------------------------------------
-----------> Selected Papers <----------
----------------------------------------
-
-@inproceedings{nitin2022cargo,
-  abbr={ASE},
-  selected={true},
-  abstract={Microservices Architecture (MSA) has become a de-facto standard for designing cloud-native enterprise applications due to its efficient infrastructure setup, service availability, elastic scalability, dependability, and better security. Existing (monolithic) systems must be decomposed into microservices to harness these characteristics. Since manual decomposition of large scale applications can be laborious and error-prone, AI-based systems to detect decomposition strategies are gaining popularity. However, the usefulness of these approaches is limited by the expressiveness of the program representation and their inability to model the application's dependency on critical external resources such as databases. Consequently, partitioning recommendations offered by current tools result in architectures that result in (a) distributed monoliths, and/or (b) force the use of (often criticized) distributed transactions. This work attempts to overcome these challenges by introducing CARGO({short for [C]ontext-sensitive l[A]bel p[R]opa[G]ati[O]n})-a novel un-/semi-supervised partition refinement technique that uses a context- and flow-sensitive system dependency graph of the monolithic application to refine and thereby enrich the partitioning quality of the current state-of-the-art algorithms. CARGO was used to augment four state-of-the-art microservice partitioning techniques that were applied on five Java EE applications (including one industrial scale proprietary project). Experiments demostrate that CARGO can improve the partition quality of all modern microservice partitioning techniques. Further, CARGO substantially reduces distributed transactions and a real-world performance evaluation of a benchmark application (deployed under varying loads) shows that CARGO also lowers the overall the latency of the deployed microservice application by 11% and increases throughput by 120% on average.},
-  title={CARGO: AI-Guided Dependency Analysis for Migrating Monolithic Applications to Microservices Architecture},
-  author={Nitin, Vikram and Asthana, Shubhi and Ray, Baishakhi and Krishna, Rahul},
-  booktitle={Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering (ASE ’22), October 10–14, 2022, Ann Arbor, MI, USA.},
-  pages={1--12},
-  year={2022},
-  html={https://arxiv.org/abs/2207.11784},
-  pdf={https://arxiv.org/pdf/2207.11784.pdf}
-}
-
-@inproceedings{iqbal2022unicorn,
-      abbr={EuroSys},
-      selected={true},
-      title={Unicorn: Reasoning about Configurable System Performance through the lens of Causality}, 
-      abstract={Modern computer systems are highly configurable, with the variability space sometimes larger than the number of atoms in the universe. Understanding and reasoning about the performance behavior of highly configurable systems, due to a vast variability space, is challenging. State-of-the-art methods for performance modeling and analyses rely on predictive machine learning models, therefore, they become (i) unreliable in unseen environments (e.g., different hardware, workloads), and (ii) produce incorrect explanations. To this end, we propose a new method, called Unicorn, which (a) captures intricate interactions between configuration options across the software-hardware stack and (b) describes how such interactions impact performance variations via causal inference. We evaluated Unicorn on six highly configurable systems, including three on-device machine learning systems, a video encoder, a database management system, and a data analytics pipeline. The experimental results indicate that Unicorn outperforms state-of-the-art performance optimization and debugging methods. Furthermore, unlike the existing methods, the learned causal performance models reliably predict performance for new environments.},
-      author={Iqbal, Md Shahriar and Krishna, Rahul and Javidian, Mohammad Ali and Ray, Baishakhi and Jamshidi, Pooyan},
-      booktitle={The European Conference on Computer Systems (EuroSys).},
-      year={2022},
-      html={https://arxiv.org/abs/2201.08413},
-      pdf={https://arxiv.org/pdf/2201.08413.pdf},
-}
-
-
-
-@article{chakraborty2021deep,
-  abbr={TSE},
-  selected={true},
-  abstract={Automated detection of software vulnerabilities is a fundamental problem in software security. Existing program analysis techniques either suffer from high false positives or false negatives. Recent progress in Deep Learning (DL) has resulted in a surge of interest in applying DL for automated vulnerability detection. Several recent studies have demonstrated promising results achieving an accuracy of up to 95% at detecting vulnerabilities. In this paper, we ask, "how well do the state-of-the-art DL-based techniques perform in a real-world vulnerability prediction scenario?". To our surprise, we find that their performance drops by more than 50%. A systematic investigation of what causes such precipitous performance drop reveals that existing DL-based vulnerability prediction approaches suffer from challenges with the training data (e.g., data duplication, unrealistic distribution of vulnerable classes, etc.) and with the model choices (e.g., simple token-based models). As a result, these approaches often do not learn features related to the actual cause of the vulnerabilities. Instead, they learn unrelated artifacts from the dataset (e.g., specific variable/function names, etc.). Leveraging these empirical findings, we demonstrate how a more principled approach to data collection and model design, based on realistic settings of vulnerability prediction, can lead to better solutions. The resulting tools perform significantly better than the studied baseline: up to 33.57% boost in precision and 128.38% boost in recall compared to the best performing model in the literature. Overall, this paper elucidates existing DL-based vulnerability prediction systems' potential issues and draws a roadmap for future DL-based vulnerability prediction research. In that spirit, we make available all the artifacts supporting our results: https://github.com/VulDetProject/ReVeal},
-  title={Deep learning based vulnerability detection: Are we there yet?},
-  author={Chakraborty, Saikat and Krishna, Rahul and Ding, Yangruibo and Ray, Baishakhi},
-  journal={IEEE Transactions on Software Engineering.},
-  year={2021},
-  publisher={IEEE},
-  html={https://arxiv.org/abs/2009.07235},
-  pdf={https://arxiv.org/pdf/2009.07235},
-}
-@inproceedings{she2020mtfuzz,
-  abbr={FSE},
-  selected={true},
-  title={MTFuzz: Fuzzing with a Multi-Task Neural Network},
-  abstract={Fuzzing is a widely used technique for detecting software bugs and vulnerabilities. Most popular fuzzers generate new inputs using an evolutionary search to maximize code coverage. Essentially, these fuzzers start with a set of seed inputs, mutate them to generate new inputs, and identify the promising inputs using an evolutionary fitness function for further mutation. Despite their success, evolutionary fuzzers tend to get stuck in long sequences of unproductive mutations. In recent years, machine learning (ML) based mutation strategies have reported promising results. However, the existing ML-based fuzzers are limited by the lack of quality and diversity of the training data. As the input space of the target programs is high dimensional and sparse, it is prohibitively expensive to collect many diverse samples demonstrating successful and unsuccessful mutations to train the model. In this paper, we address these issues by using a Multi-Task Neural Network that can learn a compact embedding of the input space based on diverse training samples for multiple related tasks (i.e., predicting for different types of coverage). The compact embedding can guide the mutation process by focusing most of the mutations on the parts of the embedding where the gradient is high. MTFuzz uncovers 11 previously unseen bugs and achieves an average of 2× more edge coverage compared with 5 state-of-the-art fuzzer on 10 real-world programs.},
-  author={She, Dongdong and Krishna, Rahul and Yan, Lu and Jana, Suman and Ray, Baishakhi},
-  booktitle={Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ECSE/FSE).},
-  year={2020},
-  html={https://arxiv.org/abs/2005.12392},
-  pdf={https://arxiv.org/pdf/2005.12392},
-}
-
-@article{krishna2020conex,
-  abbr={TSE},
-  selected={true},
-  abstract={Configuration space complexity makes the big-data software systems hard to configure well. Consider Hadoop, with over nine hundred parameters, developers often just use the default configurations provided with Hadoop distributions. The opportunity costs in lost performance are significant. Popular learning-based approaches to auto-tune software does not scale well for big-data systems because of the high cost of collecting training data. We present a new method based on a combination of Evolutionary Markov Chain Monte Carlo (EMCMC) sampling and cost reduction techniques to cost-effectively find better-performing configurations for big data systems. For cost reduction, we developed and experimentally tested and validated two approaches: using scaled-up big data jobs as proxies for the objective function for larger jobs and using a dynamic job similarity measure to infer that results obtained for one kind of big data problem will work well for similar problems. Our experimental results suggest that our approach promises to significantly improve the performance of big data systems and that it outperforms competing approaches based on random sampling, basic genetic algorithms (GA), and predictive model learning. Our experimental results support the conclusion that our approach has strongly demonstrated potential to significantly and cost-effectively improve the performance of big data systems.},
-  title={ConEx: Efficient exploration of big-data system configurations for better performance},
-  author={Krishna, Rahul and Tang, Chong and Sullivan, Kevin and Ray, Baishakhi},
-  journal={IEEE Transactions on Software Engineering},
-  year={2020},
-  publisher={IEEE},
-  html={https://arxiv.org/abs/1910.09644},
-  pdf={https://arxiv.org/pdf/1910.09644},
-}
-
-@article{krishna2020whence,
-  abbr={TSE},
-  selected={true},
-  abstract={As software systems grow in complexity and the space of possible configurations increases exponentially, finding the near-optimal configuration of a software system becomes challenging. Recent approaches address this challenge by learning performance models based on a sample set of configurations. However, collecting enough sample configurations can be very expensive since each such sample requires configuring, compiling, and executing the entire system using a complex test suite. When learning on new data is too expensive, it is possible to use \textit{Transfer Learning} to "transfer" old lessons to the new context. Traditional transfer learning has a number of challenges, specifically, (a) learning from excessive data takes excessive time, and (b) the performance of the models built via transfer can deteriorate as a result of learning from a poor source. To resolve these problems, we propose a novel transfer learning framework called BEETLE, which is a "bellwether"-based transfer learner that focuses on identifying and learning from the most relevant source from amongst the old data. This paper evaluates BEETLE with 57 different software configuration problems based on five software systems (a video encoder, an SAT solver, a SQL database, a high-performance C-compiler, and a streaming data analytics tool). In each of these cases, BEETLE found configurations that are as good as or better than those found by other state-of-the-art transfer learners while requiring only a fraction (1/7th) of the measurements needed by those other methods. Based on these results, we say that BEETLE is a new high-water mark in optimally configuring software.},
-  title={Whence to learn? transferring knowledge in configurable systems using beetle},
-  author={Krishna, Rahul and Nair, Vivek and Jamshidi, Pooyan and Menzies, Tim},
-  journal={IEEE Transactions on Software Engineering},
-  year={2020},
-  publisher={IEEE},
-  html={https://arxiv.org/abs/1911.01817},
-  pdf={https://arxiv.org/pdf/1911.01817},
-}
-
-@article{krishna2020cadet,
-  abbr={NeurIPS},
-  abstract={Modern computing platforms are highly-configurable with thousands of interacting configurations. However, configuring these systems is challenging. Erroneous configurations can cause unexpected non-functional faults. This paper proposes CADET (short for Causal Debugging Toolkit) that enables users to identify, explain, and fix the root cause of non-functional faults early and in a principled fashion. CADET builds a causal model by observing the performance of the system under different configurations. Then, it uses casual path extraction followed by counterfactual reasoning over the causal model to: (a) identify the root causes of non-functional faults, (b) estimate the effects of various configurable parameters on the performance objective(s), and (c) prescribe candidate repairs to the relevant configuration options to fix the non-functional fault. We evaluated CADET on 5 highly-configurable systems deployed on 3 NVIDIA Jetson systems-on-chip. We compare CADET with state-of-the-art configuration optimization and ML-based debugging approaches. The experimental results indicate that CADET can find effective repairs for faults in multiple non-functional properties with (at most) 17% more accuracy, 28% higher gain, and 40× speed-up than other ML-based performance debugging methods. Compared to multi-objective optimization approaches, CADET can find fixes (at most) 9× faster with comparable or better performance gain. Our case study of non-functional faults reported in NVIDIA's forum show that CADET can find 14 better repairs than the experts' advice in less than 30 minutes.},
-  title={CADET: A systematic method for debugging misconfigurations using counterfactual reasoning},
-  author={Krishna, Rahul and Shahriar Iqbal, Md and Javidian, Mohammad Ali and Ray, Baishakhi and Jamshidi, Pooyan},
-  journal={NeurIPS 2020 (Workshop on ML for Systems).},
-  year={2020},
-  html={https://arxiv.org/abs/2010.06061},
-  pdf={https://arxiv.org/pdf/2010.06061.pdf},
-}
-
-@article{krishna2020learning,
-  abbr={EMSE},
-  title={Learning actionable analytics from multiple software projects},
-  author={Krishna, Rahul and Menzies, Tim},
-  journal={Empirical Software Engineering},
-  volume={25},
-  number={5},
-  pages={3468--3500},
-  year={2020},
-  publisher={Springer},
-  html={https://arxiv.org/abs/1708.05442},
-  pdf={https://arxiv.org/pdf/1708.05442.pdf}
-}
-
-@article{yedida2021partitioning,
+@article{xia2018hyperparameter,
   abbr={arXiv},
-  title={Partitioning Cloud-based Microservices (via Deep Learning)},
-  author={Yedida, Rahul and Krishna, Rahul and Kalia, Anup and Menzies, Tim and Xiao, Jin and Vukovic, Maja},
-  abstract={Cloud-based software has many advantages. When services are divided into many independent components, they are easier to update. Also, during peak demand, it is easier to scale cloud services (just hire more CPUs). Hence, many organizations are partitioning their monolithic enterprise applications into cloud-based microservices.
-Recently there has been much work using machine learning to simplify this partitioning task. Despite much research, no single partitioning method can be recommended as generally useful. More specifically, those prior solutions are "brittle''; i.e. if they work well for one kind of goal in one dataset, then they can be sub-optimal if applied to many datasets and multiple goals.
-In order to find a generally useful partitioning method, we propose DEEPLY. This new algorithm extends the CO-GCN deep learning partition generator with (a) a novel loss function and (b) some hyper-parameter optimization. As shown by our experiments, DEEPLY generally outperforms prior work (including CO-GCN, and others) across multiple datasets and goals. To the best of our knowledge, this is the first report in SE of such stable hyper-parameter optimization.
-To aid reuse of this work, DEEPLY is available here: https://github.com/anonymousplatypus/icse-deeply},
-  journal={arXiv preprint.},
-  year={2021},
-  html={https://arxiv.org/abs/2109.14569},
-  pdf={https://arxiv.org/pdf/2109.14569.pdf}
+  title={Hyperparameter optimization for effort estimation},
+  author={Xia, Tianpei and Krishna, Rahul and Chen, Jianfeng and Mathew, George and Shen, Xipeng and Menzies, Tim},
+  journal={arXiv preprint arXiv:1805.00336},
+  year={2018}
 }
 
-@inproceedings{yedida2021lessons,
+@article{krishna2017less,
+  abbr={IST},
+  title={Less is more: Minimizing code reorganization using XTREE},
+  author={Krishna, Rahul and Menzies, Tim and Layman, Lucas},
+  journal={Information and Software Technology},
+  volume={88},
+  pages={53--66},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@inproceedings{krishna2016too,
   abbr={ASE},
-  abstract={ When optimizing software for the cloud, monolithic applications need to be partitioned into many smaller *microservices*. While many tools have been proposed for this task, we warn that the evaluation of those approaches has been incomplete; e.g. minimal prior exploration of hyperparameter optimization. Using a set of open source Java EE applications, we show here that (a) such optimization can significantly improve microservice partitioning; and that (b) an open issue for future work is how to find which optimizer works best for different problems.},
-  title={Lessons learned from hyper-parameter tuning for microservice candidate identification},
-  author={Yedida, Rahul and Krishna, Rahul and Kalia, Anup and Menzies, Tim and Xiao, Jin and Vukovic, Maja},
-  booktitle={The 36th IEEE/ACM International Conference on Automated Software Engineering, Industry Showcase.},
-  year={2021},
-  html={https://arxiv.org/abs/2106.06652},
-  pdf={https://arxiv.org/pdf/2106.06652}
+  title={Too much automation? The bellwether effect and its implications for transfer learning},
+  author={Krishna, Rahul and Menzies, Tim and Fu, Wei},
+  booktitle={Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering},
+  pages={122--131},
+  year={2016}
+}
+
+@inproceedings{krishna2016bigse,
+  abbr={ICSE-BigDSE},
+  title={The 'BigSE' Project: Lessons Learned from Validating Industrial Text Mining},
+  author={Krishna, Rahul and Yu, Zhe and Agrawal, Amritanshu and Dominguez, Manuel and Wolf, David},
+  booktitle={Big Data Software Engineering (BIGDSE), 2016 IEEE/ACM 2nd International Workshop on},
+  pages={65--71},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{krishna2015actionable,
+  abbr={ASE-Workshop},
+  title={Actionable=Cluster+Contrast?},
+  author={Krishna, Rahul and Menzies, Tim},
+  booktitle={Automated Software Engineering Workshop (ASEW), 2015 30th IEEE/ACM International Conference on},
+  pages={14--17},
+  year={2015},
+  organization={IEEE}
+}
+
+@article{ganesh2014entropy,
+  abbr={EAAI},
+  title={Entropy based Binary Particle Swarm Optimization and classification for ear detection},
+  author={Ganesh, Madan Ravi and Krishna, Rahul and Manikantan, K and Ramachandran, S},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={27},
+  pages={115--128},
+  year={2015},
+  publisher={Pergamon}
 }

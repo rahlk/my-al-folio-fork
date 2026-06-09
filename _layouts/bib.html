@@ -71,10 +71,18 @@
           </div>
 
           <!-- Journal/Book title and date -->
+          {%- comment -%} Reset per entry: Liquid variables persist across loop iterations,
+          so @misc/@arxiv entries would otherwise inherit the previous entry's venue. {%- endcomment -%}
+          {%- assign entrytype = "" -%}
+          {%- assign entrymonth = "" -%}
           {% if entry.type == "article" -%}
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
             {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+          {%- elsif entry.type == "misc" -%}
+            {%- if entry.arxiv -%}
+              {%- capture entrytype -%}<em>arXiv preprint arXiv:{{entry.arxiv}}</em>{%- endcapture -%}
+            {%- endif -%}
           {%- endif -%}
           {%- if entry.month -%}
             {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
@@ -86,6 +94,9 @@
           <div class="periodical">
             {{ periodical | strip }}
           </div>
+          {%- if entry.award %}
+          <div class="award" style="color: #b8860b; font-weight: bold; margin-top: 4px;">🏆 {{ entry.award }}</div>
+          {%- endif %}
         {%- endif %}
         
           <!-- Links/Buttons -->

@@ -119,7 +119,7 @@ news_limit: 5
 # Markdown and syntax highlight
 markdown: kramdown
 highlighter: rouge
-highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme: vs  # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
   input: GFM
   syntax_highlighter_opts:
@@ -137,6 +137,17 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  # Stale Astro experiment — not part of the Jekyll site
+  - src
+  - dist
+  - public
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - astro.config.mjs
+  - AGENTS.md
+  - DESIGN-GUIDE.md
 keep_files:
   - CNAME
   - .nojekyll

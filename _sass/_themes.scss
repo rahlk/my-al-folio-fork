@@ -1,20 +1,20 @@
 /*******************************************************************************
- * Themes
+ * Themes — VS Code "Classic" (Light+ / Dark+)
  ******************************************************************************/
- 
+
 :root {
-  --global-bg-color: #{$gb-lm-bg0-hard};
-  --global-code-bg-color: #{$gb-lm-bg0-hard};
-  --global-text-color: #{$gb-dm-bg0-hard};
-  --global-text-color-light: #{$gb-dm-bg0-soft};
-  --global-theme-color: #{$gb-lm-dark-blue};
-  --global-badge-color: #{$gb-dm-light-purple};
-  --global-hover-color: #{$gb-lm-dark-purple};
-  --global-footer-bg-color: #{$gb-lm-bg0-hard};
-  --global-footer-text-color: #{$gb-lm-bg0-hard};
-  --global-footer-link-color: #{$gb-lm-bg0-hard};
-  --global-distill-app-color: #{$gb-dm-bg0-soft};
-  --global-divider-color: rgba(0,0,0,.1);
+  --global-bg-color: #{$vs-lm-bg};
+  --global-code-bg-color: #{$vs-lm-bg-alt};
+  --global-text-color: #{$vs-lm-fg};
+  --global-text-color-light: #{$vs-lm-fg-muted};
+  --global-theme-color: #{$vs-lm-accent};
+  --global-badge-color: #{$vs-lm-badge};
+  --global-hover-color: #{$vs-lm-accent-hover};
+  --global-footer-bg-color: #{$vs-lm-bg-alt};
+  --global-footer-text-color: #{$vs-lm-fg};
+  --global-footer-link-color: #{$vs-lm-accent};
+  --global-distill-app-color: #{$vs-lm-bg-alt};
+  --global-divider-color: #{$vs-lm-divider};
 
   .fa-sun {
     display : none;
@@ -27,18 +27,18 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$gb-dm-bg0-soft};
-  --global-code-bg-color: #{$gb-dm-bg0-hard};
-  --global-text-color: #{$gb-lm-bg0-hard};
-  --global-text-color-light: #{$gb-lm-bg0-hard};
-  --global-theme-color: #{$gb-dm-light-blue};
-  --global-badge-color: #{$gb-dm-dark-purple};
-  --global-hover-color: #{$gb-dm-light-purple};
-  --global-footer-bg-color: #{$gb-dm-bg0-soft};
-  --global-footer-text-color: #{$gb-dm-bg0-soft};
-  --global-footer-link-color: #{$gb-dm-bg0-soft};
-  --global-distill-app-color: #{$gb-lm-bg0-hard};
-  --global-divider-color: #424246;
+  --global-bg-color: #{$vs-dm-bg};
+  --global-code-bg-color: #{$vs-dm-bg-alt};
+  --global-text-color: #{$vs-dm-fg};
+  --global-text-color-light: #{$vs-dm-fg-muted};
+  --global-theme-color: #{$vs-dm-accent};
+  --global-badge-color: #{$vs-dm-badge};
+  --global-hover-color: #{$vs-dm-accent-hover};
+  --global-footer-bg-color: #{$vs-dm-bg-alt};
+  --global-footer-text-color: #{$vs-dm-fg};
+  --global-footer-link-color: #{$vs-dm-accent};
+  --global-distill-app-color: #{$vs-dm-bg-alt};
+  --global-divider-color: #{$vs-dm-divider};
 
   .fa-sun {
     padding-left: 10px;

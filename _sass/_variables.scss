@@ -31,95 +31,36 @@ $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
 
+// Typography
+$global-font: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !default;
+
+
 // Theme colors
 
 $code-bg-color-light:     rgba($purple-color, 0.05);
 $code-bg-color-dark:      #2c3237 !default;
 
 // ----------------------------------------------------------------------------
-// Gruvbox scss file
-// June 18 2017
-// Author: Will Tanna
-
-// How to Read:
-// $gb-dm-dark-red = Gruvbox-DarkMode-Dark-Red
-// $gb-lm-dark-red = Gruvbox-LightMode-Dark-Red
+// VS Code "Classic" palette (Light+ / Dark+)
+// Maps to --global-* CSS custom properties in _themes.scss
 // ----------------------------------------------------------------------------
 
-// ----------------------------------------------------------------------------
-// Dark Mode
-// ----------------------------------------------------------------------------
+// Light+ (default light theme)
+$vs-lm-bg:           #ffffff;   // editor background
+$vs-lm-bg-alt:       #f3f3f3;   // side bar / widget / code background
+$vs-lm-fg:           #1e1e1e;   // editor foreground
+$vs-lm-fg-muted:     #6e6e6e;   // muted / secondary text
+$vs-lm-accent:       #007acc;   // signature VS Code blue (links, headings)
+$vs-lm-accent-hover: #005a9e;   // darker blue on hover
+$vs-lm-badge:        #007acc;   // badge background
+$vs-lm-divider:      rgba(0, 0, 0, 0.1);
 
-// Dark Background
-$gb-dm-bg0: #282828;
-$gb-dm-bg0-hard: #1d2021;
-$gb-dm-bg0-soft: #32302f;
-$gb-dm-bg1: #3c3836;
-$gb-dm-bg2: #504945;
-$gb-dm-bg3: #665c54;
-$gb-dm-bg4: #7c6f64;
-
-// Dark Foreground
-$gb-dm-fg0: #fbf1c7;
-$gb-dm-fg1: #ebdbb2;
-$gb-dm-fg2: #d5c4a1;
-$gb-dm-fg3: #bdae93;
-$gb-dm-fg4: #a89984;
-
-// Dark Colors
-$gb-dm-dark-red: #cc241d;
-$gb-dm-dark-green: #98971a;
-$gb-dm-dark-yellow: #d79921;
-$gb-dm-dark-blue: #458588;
-$gb-dm-dark-purple: #b16286;
-$gb-dm-dark-aqua: #689d6a;
-$gb-dm-dark-orange: #d65d0e;
-$gb-dm-dark-gray: #928374;
-
-$gb-dm-light-red: #fb4934;
-$gb-dm-light-green: #b8bb26;
-$gb-dm-light-yellow: #fabd2f;
-$gb-dm-light-blue: #83a598;
-$gb-dm-light-purple: #d3869b;
-$gb-dm-light-aqua: #8ec07c;
-$gb-dm-light-orange: #f38019;
-$gb-dm-light-gray: #a89984;
-
-// ----------------------------------------------------------------------------
-// Light Mode
-// ----------------------------------------------------------------------------
-
-// Light Background
-$gb-lm-bg0: #fbf1c7;
-$gb-lm-bg0-hard: #f9f5d7;
-$gb-lm-bg0-soft: #f2e5bc;
-$gb-lm-bg1: #ebdbb2;
-$gb-lm-bg2: #d5c4a1;
-$gb-lm-bg3: #bdae93;
-$gb-lm-bg4: #a89984;
-
-// Light Foreground
-$gb-lm-fg0: #282828;
-$gb-lm-fg1: #3c3836;
-$gb-lm-fg2: #504945;
-$gb-lm-fg3: #665c54;
-$gb-lm-fg4: #7c6f64;
-
-// Light Colors
-$gb-lm-dark-red: #cc241d;
-$gb-lm-dark-green: #98971a;
-$gb-lm-dark-yellow: #d79921;
-$gb-lm-dark-blue: #458588;
-$gb-lm-dark-purple: #b16286;
-$gb-lm-dark-aqua: #689d6a;
-$gb-lm-dark-orange: #d65d0e;
-$gb-lm-dark-gray: #928374;
-
-$gb-lm-light-red: #9d0006;
-$gb-lm-light-green: #79740e;
-$gb-lm-light-yellow: #b57614;
-$gb-lm-light-blue: #076678;
-$gb-lm-light-purple: #8f3f71;
-$gb-lm-light-aqua: #427b58;
-$gb-lm-light-orange: #af3a03;
-$gb-lm-light-gray: #7c6f64;
+// Dark+ (dark theme)
+$vs-dm-bg:           #1e1e1e;   // editor background
+$vs-dm-bg-alt:       #252526;   // side bar / widget / code background
+$vs-dm-fg:           #d4d4d4;   // editor foreground
+$vs-dm-fg-muted:     #9d9d9d;   // muted / secondary text
+$vs-dm-accent:       #569cd6;   // classic keyword blue (links, headings)
+$vs-dm-accent-hover: #9cdcfe;   // lighter blue on hover
+$vs-dm-badge:        #0e639c;   // button/badge blue
+$vs-dm-divider:      #424246;

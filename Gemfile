@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 group :jekyll_plugins do
-    gem 'jekyll'
+    gem 'jekyll', '~> 4.3'
+    gem 'faraday-retry'
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
@@ -9,6 +10,8 @@ group :jekyll_plugins do
     gem 'jekyll-imagemagick'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-scholar'
+    # bibtex-ruby 6.0.0 had a name-token regression; 6.2+ fixes it.
+    gem 'bibtex-ruby', '>= 6.2'
     gem 'jekyll-sitemap'
     gem 'jekyll-target-blank'
     gem 'jekyll-twitter-plugin'
