@@ -1,15 +1,15 @@
 ---
 name: "Rahul Krishna"
 avatar: "rkrsn.jpg"
-shortBio: "Research Staff Member, IBM Research (Application Modernization). ML × PL for cloud-native software."
+shortBio: "Senior Research Scientist, IBM Research. LLMs × program analysis for software engineering."
 institution: "IBM Research, NY"
 ---
 
-I work at the intersection of **Machine Learning** and **Programming Languages** for modernizing and maintaining cloud-native applications, as part of the [Application Modernization](https://research.ibm.com/teams/application-modernization) team at IBM Research.
+I'm a Senior Research Scientist at [IBM Research](https://research.ibm.com/teams/application-modernization), where my work sits at the intersection of **large language models** and **program analysis** for software engineering. My current research builds agentic systems that bridge code and IT operations — spanning root-cause analysis of cloud incidents (*Praxis*, Best Paper Award at DSN 2026), automated test generation (*ASTER*, Distinguished Paper Award at ICSE 2025), code translation and modernization (*SpecTra*, *Lost in Translation*, and *C2SaferRust*), and the open-source CodeLLM-DevKit (CLDK) framework, a middleware layer that grounds agents with program-analysis context.
 
-Prior to this, I was a Postdoctoral Fellow at Columbia University working with [Dr. Baishakhi Ray](https://www.rayb.info/), where my research explored ways in which Machine Learning can be used to *trigger, detect, and repair* problems across the software lifecycle.
+My work has been recognized with several awards, including a Best Paper Award at DSN 2026 (*Praxis*), Distinguished Paper Awards at ICSE 2025 (*ASTER*), ASE 2022 (*CARGO*, AI-guided microservice migration), and ICSE 2019 (*iSENSE*), and a Best Paper Runner-Up at IEEE TSE 2021 for work on deep-learning vulnerability detection. My broader interests include **fuzz testing** — designing transferable, neural-network-guided fuzzers that uncover vulnerabilities in C/C++ programs — and **causal inference**, which I apply to diagnose and repair performance faults and reason about configurable-system behavior. My research appears regularly at the top venues in software engineering and systems (ICSE, FSE, ASE, OOPSLA, EuroSys, TSE, DSN).
 
-I obtained my Ph.D. at NC State University, advised by [Dr. Tim Menzies](http://menzies.us). My dissertation focused on **actionable analytics** for software engineering — algorithms that go beyond prediction to provide insights that help developers make better decisions, including data-mining approaches (e.g., transfer learning) that produce useful results even with limited data.
+Earlier, I completed a postdoc at Columbia University on fuzzing, causal inference, and vulnerability detection, and a Ph.D. at NC State University on actionable analytics and transfer learning for software engineering.
 
 Best way to reach me is via email: `imralk` at `gmail` dot `com`.
 

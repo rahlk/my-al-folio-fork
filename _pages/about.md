@@ -8,7 +8,7 @@ profile:
   align: right
   image: pupnme.png
   address: >
-    <p>Research Staff Member, IBM Research, NY.</p>
+    <p>Senior Research Scientist, IBM Research, NY.</p>
     <p>imralk AT gmail DOT com</p>
 
 news: true  # includes a list of news items
@@ -16,9 +16,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I work in the intersection of Machine Learning and Programming Languages for modernizing and mainitaining cloud-native applications. Prior to this, I was Post doctoral fellow at Columbia University working with [Dr. Baishakhi Ray](https://www.rayb.info/) where my research explored the ways in which Machine Learning can be used to *trigger, detect, and repair* various problem across the software lifecycle.
+I'm a Senior Research Scientist at [IBM Research](https://research.ibm.com/teams/application-modernization), where my work sits at the intersection of *large language models* and *program analysis* for software engineering. My current research builds agentic systems that bridge code and IT operations — spanning root-cause analysis of cloud incidents (*Praxis*, Best Paper Award at DSN 2026), automated test generation (*ASTER*, Distinguished Paper Award at ICSE 2025), code translation and modernization (*SpecTra*, *Lost in Translation*, and *C2SaferRust*), and the open-source CodeLLM-DevKit (CLDK) framework, a cross-language middleware layer that grounds agents with program-analysis context.
 
-I obtained my PhD at NC State University, guided by [Dr. Tim Menzies](http://menzies.us). I worked on *actionable analytics* for software engineering. I created algorithms that go beyond prediction to provide insights that might help developers make better decisions. I focused on data mining approaches (e.g., transfer learning) that can create insights even when there isn't enough data.
+My work has been recognized with several awards, including a Best Paper Award at DSN 2026 (*Praxis*), Distinguished Paper Awards at ICSE 2025 (*ASTER*), ASE 2022 (*CARGO*, AI-guided microservice migration), and ICSE 2019 (*iSENSE*), and a Best Paper Runner-Up at IEEE TSE 2021 for work on deep-learning vulnerability detection. My research appears regularly at the top venues in software engineering and systems (ICSE, FSE, ASE, OOPSLA, EuroSys, TSE, DSN).
+
+My broader interests include software security (particularly vulnerability detection and fuzzing) and causal inference (applied to diagnosing and repairing performance faults and reasoning about configurable-system behavior) — themes from my postdoc at Columbia University. Earlier still, I completed a Ph.D. at NC State University on actionable analytics and transfer learning for software engineering.
 
 + [Resume](/assets/pdf/resume.pdf). 
 
